@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive-card-details-form-main</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="row main-row">
+            <div class="col-lg-4 col-md-4 col-sm-4 card-col">
+              <div class="front-card">
+
+                <img class="card-front" src="images/bg-card-front.png" alt="">
+
+                <img class="card-logo" src="images/card-logo.svg" alt="">
+
+                <p class="card-number-img" id="cardNumber-img">0000 0000 0000 0000</p>
+
+                <div class="row cardholder-exp-img">
+                  <div class="col-lg-10">
+                    <span id="card-holder-img">Jane Appleseed</span>
+                  </div>
+
+                  <div class="col-lg-2 card-date-col">
+                    <span id="card-month">00</span>/<span id="card-year">00</span>
+                  </div>
+                </div>
+
+              </div>
+                <div class="back-card">
+                  <img class="card-back" src="images/bg-card-back.png" alt="">
+                  <p class="card-cvc">000</p>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 form-col">
+                <form class="row g-3" id="form">
+                    <div class="col-12">
+                      <label for="cardholder-name" class="form-label">CARDHOLDER NAME</label>
+                      <input type="text" class="form-control" id="cardholder-name" placeholder="e.g Jane Appleseed">
+                    </div>
+                    <div class="col-12">
+                      <label for="card-number" class="form-label">CARD NUMBER</label>
+                      <input type="text" class="form-control" id="card-number" placeholder="e.g 1234 5678 9123 0000" maxlength="16" required>
+
+                      <p class="errorFormat" id="numberError"></p>
+
+                    </div>
+                    
+                    <div class="col-md-4">
+                      <label for="month" class="form-label">EXP.DATE</label>
+                      <input type="number" class="form-control" id="month" placeholder="MM" maxlength="2" required>
+                      <p class="errorFormat" id="exp-date-error"></p>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="year" class="form-label">(MM/YY)</label>
+                        <input type="text" class="form-control" id="year" placeholder="YY" maxlength="2" required>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="cvc" class="form-label">CVC</label>
+                      <input type="text" class="form-control" id="cvc" placeholder="e.g. 123" maxlength="3" required>
+                      <p class="errorFormat" id="cvc-error"></p>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                      <button type="submit" class="btn btn-primary form-control confirm-btn" >Confirm</button>
+                    </div>
+                  </form>
+
+                  <div class="thank-you">
+                    <img src="images/icon-complete.svg" alt="">
+
+                    <h1>THANK YOU!</h1>
+                    <p>We've added your card details</p>
+                    
+                    <button type="button" class="btn btn-primary form-control confirm-btn">Continue</button>
+                  </div>
+            </div>
+        </div>
+    </div>
+       
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
