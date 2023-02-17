@@ -7,67 +7,49 @@ body{
     font-family: 'Space Grotesk';
     font-size: 18px;
 }
-.container{
-    /* box-shadow: hsl(249, 99%, 64%) to hsl(278, 94%, 30%); */
+.container-fluid{
+    margin: 0;
+    padding: 0;
     background: hsl(0, 0%, 100%);
-    margin: 20px auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.main-row{
+.card-col{
     background: url('../images/bg-main-desktop.png');
     background-repeat: no-repeat;
     background-size: contain;
+    margin: 0;
+    padding: 50px;
 }
-.card-col{
-    margin: 100px 50px;
+
+.front-card{
+    background: url('../images/bg-card-front.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 20px 25px;
+    margin: 50px auto;
+    color: hsl(0, 0%, 100%);
 }
 img{
     width: 100%;
 }
-.card-col .card-back{
-    margin: 10px 50px;
-}
-
-.card-front, 
-.card-logo,
-.card-number-img,
-.cardholder-exp-img,
-.cvc-img{
-    z-index: 100;
-}
-.card-front{
-    position: absolute;
+.card-logo{
     width: 25%;
 }
-.card-logo{
-    width: 5%;
-    position: absolute;
-    left: 18%;
-    top: 23%;
+.card-number-row{
+    margin-top: 30px;
 }
+
 .card-number-img{
-    position: absolute;
-    left: 18%;
-    top: 37.5%;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
 }
 .cardholder-exp-img{
-    position: absolute;
-    width: 22%;
-    top:42.5%;
-    left: 18%;
     font-size: 12px;
     text-transform: uppercase;
     color: var(--lightGrayishViolet);
 }
-.card-number-img, .cardholder-exp-img, .card-cvc{
-    color: hsl(0, 0%, 100%);
-}
 
-.card-back{
-    position: absolute;
-    width: 25%;
-    top: 50%;
+.back-card{
+    margin: 50px 0 50px 40px;
+    color: hsl(0, 0%, 100%);
 }
 .card-cvc{
     font-size: 0.8rem;
@@ -75,6 +57,14 @@ img{
     left: 40%;
     top: 64%;
     letter-spacing: 0.2em;
+    
+}
+
+.form-col{
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    width: 375px;
 }
 input.form-control:focus, button.form-control:focus{
     box-shadow: none !important;
@@ -82,13 +72,6 @@ input.form-control:focus, button.form-control:focus{
 input.form-control:focus{
     border: 1px solid hsl(278, 94%, 30%) !important;
 }
-.form-col{
-    display: flex;
-    justify-content: center;
-    margin: 100px auto;
-    width: 375px;
-}
-
 label{
     font-weight: 500;
     font-size: 16px;
@@ -96,11 +79,13 @@ label{
 .errorFormat{
     font-size: 14px;
     color: hsl(0, 100%, 66%);
-    /* visibility: hidden; */
 }
 .confirm-btn{
     background: hsl(278, 68%, 11%);
     border: none;
+}
+.confirm-btn:hover, .confirm-btn:focus{
+    background: hsl(278, 68%, 11%);
 }
 
 .thank-you{
@@ -127,8 +112,42 @@ label{
     padding: 20px auto;
     margin: 10px auto 30px;
 }
-@media (min-width:576px){
-    .container{
-        width: 992px;
+@media (max-width:576px){
+    .card-col{
+        background: url('../images/bg-main-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 50px;
     }
+    .front-card{
+        width: fit-content;
+        margin: 0;
+        padding: 30px;
+    }
+    .card-logo{
+        width: 15%;
+    }
+    .card-number-img{
+        letter-spacing: 0.2em;
+    }
+    .card-holder-img-name{
+        width: 66.67%;
+    }
+    .card-date-col{
+        width: 33.33%;
+    }
+    .back-card{
+        width: fit-content;
+        margin: 0;
+    }
+    .card-cvc{
+        font-size: 0.8rem;
+        position: absolute;
+        left: 70%;
+        top: 33%;
+        letter-spacing: 0.2em;
+        
+    }
+
 }

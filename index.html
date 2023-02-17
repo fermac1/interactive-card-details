@@ -10,34 +10,50 @@
     <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row main-row">
-            <div class="col-lg-4 col-md-4 col-sm-4 card-col">
-              <div class="front-card">
+            <div class="col-lg-4 col-md-12 col-sm-12 card-col">
 
-                <img class="card-front" src="images/bg-card-front.png" alt="">
+                         <!-- front card -->
+                        <div class="front-card">
 
-                <img class="card-logo" src="images/card-logo.svg" alt="">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <img class="card-logo" src="images/card-logo.svg" alt="">
+                                </div>
+                            </div>
 
-                <p class="card-number-img" id="cardNumber-img">0000 0000 0000 0000</p>
+                            <div class="row card-number-row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <p class="card-number-img" id="cardNumber-img">0000 0000 0000 0000</p>
+                                </div>
+                            </div>
 
-                <div class="row cardholder-exp-img">
-                  <div class="col-lg-10">
-                    <span id="card-holder-img">Jane Appleseed</span>
-                  </div>
+                            <div class="row cardholder-exp-img">
+                            <div class="col-lg-8 col-md-8 col-sm-8 card-holder-img-name">
+                                <span id="card-holder-img">Jane Appleseed</span>
+                            </div>
 
-                  <div class="col-lg-2 card-date-col">
-                    <span id="card-month">00</span>/<span id="card-year">00</span>
-                  </div>
-                </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 card-date-col">
+                                <span id="card-month">00</span>/<span id="card-year">00</span>
+                            </div>
+                            </div>
 
-              </div>
-                <div class="back-card">
-                  <img class="card-back" src="images/bg-card-back.png" alt="">
-                  <p class="card-cvc">000</p>
-                </div>
+                        </div>
+                
+
+                        <!-- back card -->
+                        <div class="back-card">
+                            <!-- <img class="card-back" src="images/bg-card-back.png" alt=""> -->
+                            <img class="card-back" src="images/bg-card-back.png" alt="">
+                            
+                                <p class="card-cvc">000</p>
+                                
+                        </div> 
+              
             </div>
-            <div class="col-lg-8 col-md-8 col-sm-8 form-col">
+
+            <div class="col-lg-8 col-md-12 col-sm-12 form-col">
                 <form class="row g-3" id="form">
                     <div class="col-12">
                       <label for="cardholder-name" class="form-label">CARDHOLDER NAME</label>
@@ -79,6 +95,7 @@
                     <button type="button" class="btn btn-primary form-control confirm-btn">Continue</button>
                   </div>
             </div>
+
         </div>
     </div>
        
