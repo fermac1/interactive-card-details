@@ -48,16 +48,22 @@ img{
 }
 
 .back-card{
-    margin: 50px 0 50px 40px;
+    background: url('../images/bg-card-back.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 375px;
+    padding: 85px  75px;
+    margin: 50px 0 50px 50px;
     color: hsl(0, 0%, 100%);
 }
 .card-cvc{
     font-size: 0.8rem;
-    position: absolute;
-    left: 40%;
-    top: 64%;
-    letter-spacing: 0.2em;
-    
+    position: static;
+    float: right;
+    letter-spacing: 0.2em; 
+    color: hsl(0, 0%, 100%);
+    margin-top: -10px; 
+    margin-right: 20px;
 }
 
 .form-col{
@@ -112,18 +118,106 @@ label{
     padding: 20px auto;
     margin: 10px auto 30px;
 }
-@media (max-width:576px){
+@media (min-width:769px) and (max-width:992px){
+    .card-col{
+        margin: 0;
+        padding: 50px;
+    }
+    .front-card{
+        margin: 50px 5px 0;
+        color: hsl(0, 0%, 100%);
+        width: 375px;
+    }
+    .form-col{
+        width: 33.33%;
+    }
+    .back-card{
+        background: url('../images/bg-card-back.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 85px;
+        margin-left: 35px;
+        width: 375px;
+        margin-bottom: 50px;
+    }
+    .card-cvc{
+        font-size: 0.8rem;
+        position: static;
+        margin: -10px 10px;
+        float: right;
+        letter-spacing: 0.2em; 
+        color: hsl(0, 0%, 100%); 
+    }
+}
+
+@media (min-width:576px) and (max-width:768px){
     .card-col{
         background: url('../images/bg-main-mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0;
-        padding: 50px;
+        padding: 50px 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .back-card{
+        background: url('../images/bg-card-back.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 75px;
+        margin-left: 100px;
+        width: 375px;
+        margin-bottom: -75px;
     }
     .front-card{
-        width: fit-content;
+        margin: 0 50px;
+        color: hsl(0, 0%, 100%);
+        width: 375px;
+    }
+    .card-cvc{
+        font-size: 0.8rem;
+        position: static;
+        float: right;
+        letter-spacing: 0.2em; 
+        color: hsl(0, 0%, 100%); 
+        margin: 3px 10px;
+        
+    }
+}
+
+@media (min-width:376px) and (max-width:576px){
+    .card-col{
+        background: url('../images/bg-main-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
         margin: 0;
-        padding: 30px;
+        padding: 50px 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .back-card{
+        background: url('../images/bg-card-back.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 65px;
+        margin-left: 100px;
+        width: 375px;
+        margin-bottom: -70px;
+    }
+    .front-card{
+        margin: 0 50px;
+        color: hsl(0, 0%, 100%);
+        width: 375px;
+    }
+    .card-cvc{
+        font-size: 0.8rem;
+        position: static;
+        float: right;
+        letter-spacing: 0.2em; 
+        color: hsl(0, 0%, 100%); 
+        margin: 3px 55px;
     }
     .card-logo{
         width: 15%;
@@ -137,17 +231,114 @@ label{
     .card-date-col{
         width: 33.33%;
     }
-    .back-card{
-        width: fit-content;
+}
+
+@media (max-width:376px){ 
+    /* .container-fluid{
         margin: 0;
+    }
+    .card-col{
+        background: url('../images/bg-main-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 50px 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .back-card{
+        background: url('../images/bg-card-back.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 65px;
+        margin-left: 100px;
+        width: 375px;
+        margin-bottom: -70px;
+    }
+    .front-card{
+        margin: 0 50px;
+        color: hsl(0, 0%, 100%);
+        width: 375px;
     }
     .card-cvc{
         font-size: 0.8rem;
-        position: absolute;
-        left: 70%;
-        top: 33%;
-        letter-spacing: 0.2em;
-        
+        position: static;
+        float: right;
+        letter-spacing: 0.2em; 
+        color: hsl(0, 0%, 100%); 
+        margin: 3px 55px;
     }
-
+    .card-logo{
+        width: 15%;
+    }
+    .card-number-img{
+        letter-spacing: 0.2em;
+    }
+    .card-holder-img-name{
+        width: 66.67%;
+    }
+    .card-date-col{
+        width: 33.33%;
+    } */
+    /* .card-col{
+        background: url('../images/bg-main-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 50px;
+    } */
+    .card-col{
+        background: url('../images/bg-main-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .form-col{
+        width: 275px;
+        margin: 50px auto;
+    }
+    .front-card{
+        margin: -80px -15px 10px;
+        color: hsl(0, 0%, 100%);
+        width: 225px;
+        padding: 10px;
+    }
+    .back-card{
+        background: url('../images/bg-card-back.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: 20px;
+        margin-bottom: -20px;
+        width: 225px;
+    }
+    .card-logo{
+        width: 10%;
+    }
+    .cardholder-exp-img{
+        padding: 0px auto;
+    }
+    .card-number-img{
+        letter-spacing: 0.1em;
+        font-size: 14px;
+    }
+    .card-holder-img-name{
+        width: 66.67%;
+    }
+    .card-date-col{
+        width: 33.33%;
+        font-size: 12px;
+    }
+    .card-cvc{
+        font-size: 0.8rem;
+        position: static;
+        float: right;
+        letter-spacing: 0.2em; 
+        color: hsl(0, 0%, 100%); 
+        margin: -35px -45px;
+    }
 }
