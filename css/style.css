@@ -184,6 +184,9 @@ label{
         margin: 3px 10px;
         
     }
+    .month-col, .year-col, .cvc-col{
+        width: 33.33%;
+    }
 }
 
 @media (min-width:376px) and (max-width:576px){
@@ -231,63 +234,12 @@ label{
     .card-date-col{
         width: 33.33%;
     }
+    .month-col, .year-col, .cvc-col{
+        width: 33.33%;
+    }
 }
 
 @media (max-width:376px){ 
-    /* .container-fluid{
-        margin: 0;
-    }
-    .card-col{
-        background: url('../images/bg-main-mobile.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0;
-        padding: 50px 100px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column-reverse;
-    }
-    .back-card{
-        background: url('../images/bg-card-back.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        padding: 65px;
-        margin-left: 100px;
-        width: 375px;
-        margin-bottom: -70px;
-    }
-    .front-card{
-        margin: 0 50px;
-        color: hsl(0, 0%, 100%);
-        width: 375px;
-    }
-    .card-cvc{
-        font-size: 0.8rem;
-        position: static;
-        float: right;
-        letter-spacing: 0.2em; 
-        color: hsl(0, 0%, 100%); 
-        margin: 3px 55px;
-    }
-    .card-logo{
-        width: 15%;
-    }
-    .card-number-img{
-        letter-spacing: 0.2em;
-    }
-    .card-holder-img-name{
-        width: 66.67%;
-    }
-    .card-date-col{
-        width: 33.33%;
-    } */
-    /* .card-col{
-        background: url('../images/bg-main-mobile.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0;
-        padding: 50px;
-    } */
     .card-col{
         background: url('../images/bg-main-mobile.png');
         background-repeat: no-repeat;
@@ -340,5 +292,8 @@ label{
         letter-spacing: 0.2em; 
         color: hsl(0, 0%, 100%); 
         margin: -35px -45px;
+    }
+    .month-col, .year-col, .cvc-col{
+        width: 33.33%;
     }
 }
