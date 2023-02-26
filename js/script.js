@@ -113,3 +113,28 @@ confirm_btn.addEventListener('click', (e)=>{
     }
 
 });
+
+// continue
+const continue_btn = document.querySelector('.continue-btn');
+
+continue_btn.addEventListener("click",  (e)=> {
+    
+    document.querySelector("#form").style.display="flex";
+      document.querySelector(".thank-you").style.display="none";
+      cardholder_name.value="";
+      cardholder_name.placeholder="e.g. Jane Appleseed";
+      name_on_card.innerHTML="Jane Appleseed";
+      card_number.value="";
+      card_number.placeholder="e.g. 1234 5678 9123 0000";
+      number_on_card.innerHTML="0000 0000 0000 0000";
+      month.value="";
+      month.placeholder="e.g. 1234 5678 9123 0000"
+      card_month.innerHTML="00";
+      year.value="";
+      year.placeholder="YY"
+      card_year.innerHTML="00";
+      cvc.value="";
+      cvc.placeholder="e.g. 123";
+      card_cvc.innerHTML="000";
+  
+  });
