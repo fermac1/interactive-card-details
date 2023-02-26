@@ -118,39 +118,29 @@ label{
     padding: 20px auto;
     margin: 10px auto 30px;
 }
-@media (min-width:769px) and (max-width:992px){
-    .card-col{
-        margin: 0;
-        padding: 50px;
-    }
-    .front-card{
-        margin: 50px 5px 0;
-        color: hsl(0, 0%, 100%);
-        width: 375px;
-    }
+/* responsiveness */
+@media (min-width:768px) and (max-width:992px){
+    /* form */
     .form-col{
         width: 33.33%;
     }
-    .back-card{
-        background: url('../images/bg-card-back.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        padding: 85px;
-        margin-left: 35px;
+    /* card */
+    .front-card{
+        margin: 50px 5px 0;
         width: 375px;
-        margin-bottom: 50px;
+    }
+    .back-card{
+        width: 375px;
     }
     .card-cvc{
         font-size: 0.8rem;
         position: static;
-        margin: -10px 10px;
-        float: right;
         letter-spacing: 0.2em; 
-        color: hsl(0, 0%, 100%); 
+        margin: -10px 100px;
     }
 }
-
 @media (min-width:576px) and (max-width:768px){
+   
     .card-col{
         background: url('../images/bg-main-mobile.png');
         background-repeat: no-repeat;
@@ -163,9 +153,6 @@ label{
         z-index: 1;
     }
     .back-card{
-        background: url('../images/bg-card-back.png');
-        background-repeat: no-repeat;
-        background-size: contain;
         padding: 75px;
         margin-left: 100px;
         width: 375px;
@@ -186,44 +173,37 @@ label{
         margin: 3px 10px;
         
     }
-    .month-col, .year-col, .cvc-col{
-        width: 33.33%;
-    }
 }
-
 @media (min-width:376px) and (max-width:576px){
     .card-col{
         background: url('../images/bg-main-mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
-        margin: 0;
-        padding: 50px 100px;
         display: flex;
         justify-content: center;
         flex-direction: column-reverse;
         z-index: 1;
+        margin: auto;
     }
     .back-card{
-        background: url('../images/bg-card-back.png');
         background-repeat: no-repeat;
-        background-size: contain;
-        padding: 65px;
-        margin-left: 100px;
-        width: 375px;
+        background-position: 50% 50%;
+        margin-left: 50px;
+        width: 275px;
         margin-bottom: -70px;
         z-index: -1;
     }
     .front-card{
-        margin: 0 50px;
-        color: hsl(0, 0%, 100%);
-        width: 375px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        margin-top: -30px;
+        width: 275px;
     }
     .card-cvc{
         font-size: 0.8rem;
         position: static;
         float: right;
         letter-spacing: 0.2em; 
-        color: hsl(0, 0%, 100%); 
         margin: 3px 55px;
     }
     .card-logo{
@@ -238,51 +218,43 @@ label{
     .card-date-col{
         width: 33.33%;
     }
+    
+    /* form */
     .month-col, .year-col, .cvc-col{
         width: 33.33%;
     }
 }
-
-@media (max-width:376px){ 
+@media (max-width:376px){
     .card-col{
         background: url('../images/bg-main-mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
-        margin: 0;
-        padding: 50px;
         display: flex;
         justify-content: center;
         flex-direction: column-reverse;
         z-index: 1;
     }
-    .form-col{
-        width: 275px;
-        margin: 50px auto;
-    }
+    /* card */
     .front-card{
-        margin: -80px -15px 10px;
-        color: hsl(0, 0%, 100%);
         width: 225px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
         padding: 10px;
+        margin-top: -50px;
     }
     .back-card{
-        background: url('../images/bg-card-back.png');
         background-repeat: no-repeat;
-        background-size: contain;
-        margin-left: 20px;
-        margin-bottom: -20px;
+        background-position: 50% 50%;
+        margin-bottom: -45px;
         width: 225px;
         z-index: -1;
     }
     .card-logo{
         width: 10%;
     }
-    .cardholder-exp-img{
-        padding: 0px auto;
-    }
     .card-number-img{
         letter-spacing: 0.1em;
-        font-size: 14px;
+        font-size: 12px;
     }
     .card-holder-img-name{
         width: 66.67%;
@@ -296,8 +268,13 @@ label{
         position: static;
         float: right;
         letter-spacing: 0.2em; 
-        color: hsl(0, 0%, 100%); 
-        margin: -35px -45px;
+        margin-right: 25px;
+        margin-top: 5px;
+    }
+    /* form */
+    .form-col{
+        width: 100%;
+        margin: 50px 10px;
     }
     .month-col, .year-col, .cvc-col{
         width: 33.33%;
